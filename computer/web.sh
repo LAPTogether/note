@@ -53,8 +53,7 @@ if [ $? -eq 0 ]; then
 EOF
 
     # Download and install WordPress
-    sudo yum install wget
-    wget -O https://cn.wordpress.org/latest-zh_CN.zip
+    wget  https://cn.wordpress.org/latest-zh_CN.zip
     unzip latest-zh_CN.zip
     sudo mv wordpress/ /var/www/html/linuxone
     sudo chown -R apache:apache /var/www/html/linuxone
